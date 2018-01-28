@@ -18,7 +18,7 @@ mongo.connect(
 )
 
 api.add_resource(Gigs, '/gigs', endpoint='All gigs')
-api.add_resource(Gigs, '/test', endpoint='test')
+api.add_resource(Gigs, '/test2', endpoint='test')
 
 # Comment to check build push trigger
 if __name__ == "__main__":
