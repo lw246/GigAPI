@@ -17,6 +17,12 @@ mongo.connect(
     password=settings.MONGO['PASSWORD']
 )
 
+
+@app.route("/")
+def home():
+    return "I'm working"
+
+
 api.add_resource(Gigs, '/gigs', endpoint='All gigs')
 api.add_resource(Gigs, '/test2', endpoint='test')
 
